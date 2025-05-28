@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Flier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score">Score: 0</div>
+        <div id="startScreen">
+            <h2>Shopify Flier</h2>
+            <p>Press SPACE or click to flap!</p>
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="gameOver" class="hidden">
+            <div class="game-over-box">
+                <div class="score-label">SCORE</div>
+                <div class="score-value" id="finalScore">0</div>
+                <div class="best-label">BEST</div>
+                <div class="best-value" id="bestScore">0</div>
+            </div>
+            <div id="initialsEntry" class="hidden">
+                <p>New High Score! Enter your initials:</p>
+                <input type="text" id="initialsInput" maxlength="3" style="text-transform:uppercase; width: 50px; text-align:center;" />
+                <button id="submitInitials">Add to Leaderboard</button>
+            </div>
+            <button id="restartButton">Play Again</button>
+        </div>
+        <div id="countdownOverlay" class="hidden"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
